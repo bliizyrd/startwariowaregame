@@ -1,0 +1,186 @@
+[gd_scene format=3 uid="uid://b0s2qfladjew"]
+
+[ext_resource type="Texture2D" uid="uid://bumrrb6vt7opr" path="res://Untitled design.png" id="1_hxypl"]
+[ext_resource type="Script" uid="uid://d8mgnvledwrf" path="res://titlescreen.gd" id="1_o0614"]
+[ext_resource type="FontFile" uid="uid://dne10vnt5b88d" path="res://Isometra-Regular.ttf" id="2_2bjoa"]
+[ext_resource type="Texture2D" uid="uid://dvjwudxro1qik" path="res://warioware buttons (1).png" id="4_hxypl"]
+[ext_resource type="Texture2D" uid="uid://dekeevv53x7j0" path="res://warioware buttons.png" id="4_o0614"]
+[ext_resource type="Texture2D" uid="uid://b5qinm3x5sxyd" path="res://warioware buttons (2).png" id="5_o0614"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yu5tm"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.9490196, 0.75686276, 0.30588236, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.54901963, 0.31764707, 0.2509804, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.28118682, 0.28118688, 0.28118682, 0.6)
+shadow_size = 5
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_goadl"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.5361145, 0.41121003, 0.094650604, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.54901963, 0.31764707, 0.2509804, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.28118682, 0.28118688, 0.28118682, 0.6)
+shadow_size = 5
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2bjoa"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.54901963, 0.31764707, 0.2509804, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.54901963, 0.31764707, 0.2509804, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0.28118682, 0.28118688, 0.28118682, 0.6)
+shadow_size = 5
+shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8pdex"]
+
+[node name="titlescreen" type="Node2D" unique_id=1408427931]
+script = ExtResource("1_o0614")
+
+[node name="background" type="TextureRect" parent="." unique_id=1987223185]
+offset_left = 1.9999996
+offset_top = 3.0
+offset_right = 1922.0
+offset_bottom = 1083.0
+scale = Vector2(0.59866625, 0.5975937)
+texture = ExtResource("1_hxypl")
+
+[node name="Label" type="Label" parent="." unique_id=898673551]
+offset_left = 6.0
+offset_top = 13.0
+offset_right = 510.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.28118682, 0.28118688, 0.28118682, 0)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("2_2bjoa")
+theme_override_font_sizes/font_size = 50
+text = "WarioWareInc."
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1037536362]
+offset_left = 15.0
+offset_top = 160.0
+offset_right = 254.0
+offset_bottom = 401.0
+theme_override_constants/separation = 25
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=266453340]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="start game" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=1479018428]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.54901963, 0.31764707, 0.2509804, 1)
+theme_override_fonts/font = ExtResource("2_2bjoa")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_yu5tm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_goadl")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_2bjoa")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pdex")
+text = "Start Game"
+
+[node name="play icon" type="TextureRect" parent="VBoxContainer/HBoxContainer2/start game" unique_id=788310710]
+self_modulate = Color(0.7505164, 0.470401, 0.3890807, 1)
+texture_filter = 2
+layout_mode = 0
+offset_left = 206.0
+offset_top = -22.0
+offset_right = 273.0
+offset_bottom = 33.0
+scale = Vector2(1.4084607, 1.5376838)
+texture = ExtResource("4_o0614")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer" unique_id=237335565]
+layout_mode = 2
+
+[node name="settings" type="Button" parent="VBoxContainer/HBoxContainer3" unique_id=3085622]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.45882353, 0.2627451, 0.2, 1)
+theme_override_fonts/font = ExtResource("2_2bjoa")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_yu5tm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_goadl")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_2bjoa")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pdex")
+text = "Settings
+"
+
+[node name="settings icon" type="TextureRect" parent="VBoxContainer/HBoxContainer3/settings" unique_id=673036484]
+modulate = Color(0.75686276, 0.48235294, 0.38039216, 1)
+texture_filter = 2
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 0
+offset_left = 138.0
+offset_top = -23.0
+offset_right = 205.0
+offset_bottom = 32.0
+scale = Vector2(1.689, 1.538)
+texture = ExtResource("4_hxypl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1286303890]
+layout_mode = 2
+
+[node name="quit" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1383295489]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4117647, 0.22745098, 0.1764706, 1)
+theme_override_fonts/font = ExtResource("2_2bjoa")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_yu5tm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_goadl")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_2bjoa")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pdex")
+text = "Quit"
+
+[node name="quit icon" type="TextureRect" parent="VBoxContainer/HBoxContainer/quit" unique_id=2054729781]
+modulate = Color(0.53197557, 0.30549428, 0.23217964, 1)
+texture_filter = 2
+custom_minimum_size = Vector2(40, 80)
+layout_mode = 0
+offset_left = 72.999954
+offset_top = -19.999985
+offset_right = 139.99995
+offset_bottom = 60.000015
+scale = Vector2(1.4189173, 1.1271691)
+texture = ExtResource("5_o0614")
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/start game" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/quit" to="." method="_on_quit_pressed"]
