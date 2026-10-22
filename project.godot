@@ -14,6 +14,11 @@ config/name="Istartwithcoolwariowaregame"
 run/main_scene="res://titlescreen.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
+[autoload]
+
+Globalscript="*uid://kh2sqtjtpf14"
+Transitionscreen="*uid://bk615tqa8gvt7"
+
 [display]
 
 window/stretch/mode="viewport"

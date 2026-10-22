@@ -1,3 +1,60 @@
 [gd_scene format=3 uid="uid://c4jlg3l5kwyea"]
 
+[ext_resource type="Texture2D" uid="uid://j5nlmqn1tyg5" path="res://download.jpg" id="1_himf5"]
+[ext_resource type="Script" uid="uid://drlwlrheg5lst" path="res://timer_screen.gd" id="1_kpjlj"]
+[ext_resource type="Texture2D" uid="uid://bowmohlo185pg" path="res://warioware_health_icon-removebg-preview.png" id="2_qf634"]
+[ext_resource type="FontFile" uid="uid://daku1qorvauft" path="res://GeistPixel-Regular-VariableFont_ELSH.ttf" id="3_mykrr"]
+
 [node name="levelscene" type="Node2D" unique_id=1419697283]
+script = ExtResource("1_kpjlj")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2033284070]
+offset_right = 1150.0
+offset_bottom = 647.0
+texture = ExtResource("1_himf5")
+
+[node name="lifeiconcontainer" type="HBoxContainer" parent="." unique_id=1918393990]
+offset_top = 16.0
+offset_right = 516.0
+offset_bottom = 116.0
+scale = Vector2(0.86326385, 0.86326385)
+
+[node name="lifeicon" type="TextureRect" parent="lifeiconcontainer" unique_id=319043221]
+layout_mode = 2
+texture = ExtResource("2_qf634")
+
+[node name="lifeicon2" type="TextureRect" parent="lifeiconcontainer" unique_id=919334069]
+layout_mode = 2
+texture = ExtResource("2_qf634")
+
+[node name="lifeicon3" type="TextureRect" parent="lifeiconcontainer" unique_id=1131804988]
+layout_mode = 2
+texture = ExtResource("2_qf634")
+
+[node name="lifeicon4" type="TextureRect" parent="lifeiconcontainer" unique_id=1780880245]
+layout_mode = 2
+texture = ExtResource("2_qf634")
+
+[node name="lifeicon5" type="TextureRect" parent="lifeiconcontainer" unique_id=788438749]
+layout_mode = 2
+texture = ExtResource("2_qf634")
+
+[node name="level" type="RichTextLabel" parent="." unique_id=809382769]
+offset_left = 10.000003
+offset_top = 93.0
+offset_right = 405.13052
+offset_bottom = 267.86368
+scale = Vector2(0.28741705, 0.28741705)
+theme_override_fonts/normal_font = ExtResource("3_mykrr")
+theme_override_font_sizes/normal_font_size = 108
+text = "Level #"
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=95159838]
+offset_left = 23.999992
+offset_top = 123.0
+offset_right = 200.58832
+offset_bottom = 276.65475
+scale = Vector2(0.43604252, 0.43604252)
+theme_override_fonts/normal_font = ExtResource("3_mykrr")
+theme_override_font_sizes/normal_font_size = 108
+text = "0.0"
