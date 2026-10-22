@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b0s2qfladjew"]
 
-[ext_resource type="Texture2D" uid="uid://j5nlmqn1tyg5" path="res://download.jpg" id="1_goadl"]
 [ext_resource type="Script" uid="uid://d8mgnvledwrf" path="res://titlescreen.gd" id="1_o0614"]
 [ext_resource type="FontFile" uid="uid://dne10vnt5b88d" path="res://Isometra-Regular.ttf" id="2_2bjoa"]
+[ext_resource type="Texture2D" uid="uid://c5ujabs0y3wxf" path="res://warioware background.png" id="2_o0614"]
 [ext_resource type="Texture2D" uid="uid://dvjwudxro1qik" path="res://warioware buttons (1).png" id="4_hxypl"]
 [ext_resource type="Texture2D" uid="uid://dekeevv53x7j0" path="res://warioware buttons.png" id="4_o0614"]
 [ext_resource type="Texture2D" uid="uid://b5qinm3x5sxyd" path="res://warioware buttons (2).png" id="5_o0614"]
@@ -75,7 +75,7 @@ offset_top = 3.0
 offset_right = 1922.0
 offset_bottom = 1083.0
 scale = Vector2(0.59866625, 0.5975937)
-texture = ExtResource("1_goadl")
+texture = ExtResource("2_o0614")
 
 [node name="Label" type="Label" parent="." unique_id=898673551]
 offset_left = 6.0
