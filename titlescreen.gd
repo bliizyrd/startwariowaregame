@@ -6,7 +6,6 @@ func _on_start_game_pressed() -> void:
 	get_tree().change_scene_to_file("res://levelscene.tscn")
 	Transitionscreen.transition()
 	await Transitionscreen.on_transition_finish
-	get_tree().change_scene_to_file("res://levelscene.tscn")
 
 
 func _on_settings_pressed() -> void:

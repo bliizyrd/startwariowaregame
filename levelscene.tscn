@@ -1,17 +1,18 @@
 [gd_scene format=3 uid="uid://c4jlg3l5kwyea"]
 
-[ext_resource type="Texture2D" uid="uid://j5nlmqn1tyg5" path="res://download.jpg" id="1_himf5"]
 [ext_resource type="Script" uid="uid://drlwlrheg5lst" path="res://timer_screen.gd" id="1_kpjlj"]
+[ext_resource type="Texture2D" uid="uid://c5ujabs0y3wxf" path="res://warioware background.png" id="2_kpjlj"]
 [ext_resource type="Texture2D" uid="uid://bowmohlo185pg" path="res://warioware_health_icon-removebg-preview.png" id="2_qf634"]
-[ext_resource type="FontFile" uid="uid://daku1qorvauft" path="res://GeistPixel-Regular-VariableFont_ELSH.ttf" id="3_mykrr"]
+[ext_resource type="FontFile" uid="uid://dne10vnt5b88d" path="res://Isometra-Regular.ttf" id="4_kpjlj"]
 
-[node name="levelscene" type="Node2D" unique_id=1419697283]
+[node name="timerscreen" type="Node2D" unique_id=1419697283]
 script = ExtResource("1_kpjlj")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=2033284070]
-offset_right = 1150.0
-offset_bottom = 647.0
-texture = ExtResource("1_himf5")
+[node name="levelscreen background" type="TextureRect" parent="." unique_id=2033284070]
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.5997236, 0.60115945)
+texture = ExtResource("2_kpjlj")
 
 [node name="lifeiconcontainer" type="HBoxContainer" parent="." unique_id=1918393990]
 offset_top = 16.0
@@ -40,21 +41,31 @@ layout_mode = 2
 texture = ExtResource("2_qf634")
 
 [node name="level" type="RichTextLabel" parent="." unique_id=809382769]
-offset_left = 10.000003
-offset_top = 93.0
-offset_right = 405.13052
-offset_bottom = 267.86368
+offset_left = 9.0
+offset_top = 96.00001
+offset_right = 471.74216
+offset_bottom = 391.7375
 scale = Vector2(0.28741705, 0.28741705)
-theme_override_fonts/normal_font = ExtResource("3_mykrr")
+theme_override_fonts/normal_font = ExtResource("4_kpjlj")
 theme_override_font_sizes/normal_font_size = 108
 text = "Level #"
 
 [node name="timer" type="RichTextLabel" parent="." unique_id=95159838]
-offset_left = 23.999992
-offset_top = 123.0
-offset_right = 200.58832
-offset_bottom = 276.65475
+offset_left = 8.0
+offset_top = 183.0
+offset_right = 287.78928
+offset_bottom = 336.65475
 scale = Vector2(0.43604252, 0.43604252)
-theme_override_fonts/normal_font = ExtResource("3_mykrr")
+theme_override_fonts/normal_font = ExtResource("4_kpjlj")
 theme_override_font_sizes/normal_font_size = 108
 text = "0.0"
+
+[node name="hint" type="RichTextLabel" parent="." unique_id=1014760919]
+offset_left = 19.000061
+offset_top = 263.0
+offset_right = 1170.0
+offset_bottom = 689.0
+scale = Vector2(0.31985247, 0.31985247)
+theme_override_fonts/normal_font = ExtResource("4_kpjlj")
+theme_override_font_sizes/normal_font_size = 108
+text = "Hint: Press 'Space' to jump."

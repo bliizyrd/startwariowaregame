@@ -12,11 +12,15 @@ extends Node2D
 var time
 
 func _ready() -> void:
-	await Timer(5.0) # using the function created 
+	await Timer(3.0) # using the function created 
 
 	if Globalscript.minigames_done < 3: #if you havent completed 3 minigames yet 
 		Globalscript.minigames_done = Globalscript.minigames_done +1
 		get_tree().change_scene_to_file("res://scenes/minigame_" + str(Globalscript.minigames_done) + ".tscn") # changes your scene by arranging this frankenstein path
+		Transitionscreen.transition()
+		await Transitionscreen.on_transition_finish
+	
+		
 # above, your script is being told to go to the next minigame. If the 
 # current minigame is level 1, then you would be on minigame 1. If you 
 # complete that level, you have the minigames_done add one, and then you 

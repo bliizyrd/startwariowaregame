@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bpvtc47dyi5be"]
 
-[ext_resource type="Texture2D" uid="uid://c5ujabs0y3wxf" path="res://warioware background.png" id="1_gi7k6"]
-[ext_resource type="PackedScene" uid="uid://cgy8ag0u1tdqf" path="res://player.tscn" id="2_gi7k6"]
+[ext_resource type="Texture2D" uid="uid://c5ujabs0y3wxf" path="res://warioware background.png" id="1_og05i"]
+[ext_resource type="PackedScene" uid="uid://cgy8ag0u1tdqf" path="res://player.tscn" id="2_lmjug"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yu5tm"]
 size = Vector2(1152, 31)
@@ -21,7 +21,7 @@ autoscroll = Vector2(100, 0)
 [node name="background" type="TextureRect" parent="scrollingbackground" unique_id=2119503601]
 offset_right = 1152.0
 offset_bottom = 648.0
-texture = ExtResource("1_gi7k6")
+texture = ExtResource("1_og05i")
 
 [node name="platform1" type="StaticBody2D" parent="." unique_id=733711143]
 
@@ -61,6 +61,6 @@ color = Color(0.45882353, 0.2627451, 0.2, 1)
 position = Vector2(334.5, 464.5)
 shape = SubResource("RectangleShape2D_uq4ul")
 
-[node name="player" parent="." unique_id=1091460728 instance=ExtResource("2_gi7k6")]
-position = Vector2(-467, 67)
+[node name="player" parent="." unique_id=1091460728 instance=ExtResource("2_lmjug")]
+position = Vector2(-461, 73.99999)
 scale = Vector2(0.92668426, 0.8296423)
