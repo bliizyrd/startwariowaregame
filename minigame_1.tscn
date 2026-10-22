@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://bpvtc47dyi5be"]
+
+[ext_resource type="Texture2D" uid="uid://c5ujabs0y3wxf" path="res://warioware background.png" id="1_gi7k6"]
+[ext_resource type="PackedScene" uid="uid://cgy8ag0u1tdqf" path="res://player.tscn" id="2_gi7k6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yu5tm"]
+size = Vector2(1152, 31)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0eh81"]
+size = Vector2(249, 31)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uq4ul"]
+size = Vector2(249, 31)
+
+[node name="minigame_1" type="Node2D" unique_id=724771022]
+
+[node name="scrollingbackground" type="Parallax2D" parent="." unique_id=312630911]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="background" type="TextureRect" parent="scrollingbackground" unique_id=2119503601]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_gi7k6")
+
+[node name="platform1" type="StaticBody2D" parent="." unique_id=733711143]
+
+[node name="ColorRect" type="ColorRect" parent="platform1" unique_id=1510442686]
+offset_top = 563.0
+offset_right = 1152.0
+offset_bottom = 594.0
+color = Color(0.45882353, 0.2627451, 0.2, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform1" unique_id=770834945]
+position = Vector2(576, 578.5)
+shape = SubResource("RectangleShape2D_yu5tm")
+
+[node name="platform2" type="StaticBody2D" parent="." unique_id=1593330587]
+
+[node name="ColorRect" type="ColorRect" parent="platform2" unique_id=1950069294]
+offset_left = 492.0
+offset_top = 350.0
+offset_right = 741.0
+offset_bottom = 381.0
+color = Color(0.45882353, 0.2627451, 0.2, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform2" unique_id=867550456]
+position = Vector2(616.5, 365.5)
+shape = SubResource("RectangleShape2D_0eh81")
+
+[node name="platform3" type="StaticBody2D" parent="." unique_id=1430074557]
+
+[node name="ColorRect" type="ColorRect" parent="platform3" unique_id=371917066]
+offset_left = 210.0
+offset_top = 449.0
+offset_right = 459.0
+offset_bottom = 480.0
+color = Color(0.45882353, 0.2627451, 0.2, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform3" unique_id=1959806526]
+position = Vector2(334.5, 464.5)
+shape = SubResource("RectangleShape2D_uq4ul")
+
+[node name="player" parent="." unique_id=1091460728 instance=ExtResource("2_gi7k6")]
+position = Vector2(-467, 67)
+scale = Vector2(0.92668426, 0.8296423)
