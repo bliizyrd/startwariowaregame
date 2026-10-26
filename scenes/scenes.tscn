@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ydrokiujjegl"]
 
-[ext_resource type="Texture2D" uid="uid://j5nlmqn1tyg5" path="res://download.jpg" id="1_rye2q"]
+[ext_resource type="Texture2D" uid="uid://j5nlmqn1tyg5" path="res://assets/download.jpg" id="1_rye2q"]
 
 [node name="background" type="TextureRect" unique_id=1029282627]
 offset_left = 4.0

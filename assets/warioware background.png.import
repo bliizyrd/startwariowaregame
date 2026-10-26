@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btwyfgskkfjvw"
-path="res://.godot/imported/warioware_player_icon-removebg-preview.png-b9b637ed2bc8c27bf17f21a7b841810a.ctex"
+uid="uid://c5ujabs0y3wxf"
+path="res://.godot/imported/warioware background.png-b94daf21ae1be491c50f7944acb4fcad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://warioware_player_icon-removebg-preview.png"
-dest_files=["res://.godot/imported/warioware_player_icon-removebg-preview.png-b9b637ed2bc8c27bf17f21a7b841810a.ctex"]
+source_file="res://assets/warioware background.png"
+dest_files=["res://.godot/imported/warioware background.png-b94daf21ae1be491c50f7944acb4fcad.ctex"]
 
 [params]
 

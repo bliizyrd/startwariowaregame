@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dekeevv53x7j0"
-path="res://.godot/imported/warioware buttons.png-01a329d6012ffa27fdd1e149e7854cda.ctex"
+uid="uid://b5qinm3x5sxyd"
+path="res://.godot/imported/warioware buttons (2).png-7ec3bad4f6d68f399d854dd1e6b6a568.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://warioware buttons.png"
-dest_files=["res://.godot/imported/warioware buttons.png-01a329d6012ffa27fdd1e149e7854cda.ctex"]
+source_file="res://assets/warioware buttons (2).png"
+dest_files=["res://.godot/imported/warioware buttons (2).png-7ec3bad4f6d68f399d854dd1e6b6a568.ctex"]
 
 [params]
 

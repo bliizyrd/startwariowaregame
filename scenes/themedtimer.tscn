@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bxtgyt5ryfc6s"]
+
+[ext_resource type="Script" uid="uid://bsyhfpm1no32l" path="res://themedtimer.gd" id="1_7apap"]
+[ext_resource type="FontFile" uid="uid://dne10vnt5b88d" path="res://assets/Isometra-Regular.ttf" id="2_1or6t"]
+
+[node name="themedtimer" type="Node2D" unique_id=408241090]
+script = ExtResource("1_7apap")
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=487134681]
+offset_left = 39.999996
+offset_top = 33.999996
+offset_right = 437.91382
+offset_bottom = 317.07217
+scale = Vector2(1.0027297, 0.44511616)
+theme_override_constants/outline_size = 15
+theme_override_fonts/normal_font = ExtResource("2_1or6t")
+theme_override_font_sizes/normal_font_size = 60
+text = "Time Left: 20"

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://daku1qorvauft"
-path="res://.godot/imported/GeistPixel-Regular-VariableFont_ELSH.ttf-ea5e1885273a59d97ddea93dadbbde98.fontdata"
+uid="uid://dne10vnt5b88d"
+path="res://.godot/imported/Isometra-Regular.ttf-f854b512d710c5ba9fc9f12b97a82b6b.fontdata"
 
 [deps]
 
-source_file="res://GeistPixel-Regular-VariableFont_ELSH.ttf"
-dest_files=["res://.godot/imported/GeistPixel-Regular-VariableFont_ELSH.ttf-ea5e1885273a59d97ddea93dadbbde98.fontdata"]
+source_file="res://assets/Isometra-Regular.ttf"
+dest_files=["res://.godot/imported/Isometra-Regular.ttf-f854b512d710c5ba9fc9f12b97a82b6b.fontdata"]
 
 [params]
 

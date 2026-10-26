@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://b0s2qfladjew"]
 
-[ext_resource type="Script" uid="uid://d8mgnvledwrf" path="res://titlescreen.gd" id="1_o0614"]
-[ext_resource type="FontFile" uid="uid://dne10vnt5b88d" path="res://Isometra-Regular.ttf" id="2_2bjoa"]
-[ext_resource type="Texture2D" uid="uid://c5ujabs0y3wxf" path="res://warioware background.png" id="2_o0614"]
-[ext_resource type="Texture2D" uid="uid://dvjwudxro1qik" path="res://warioware buttons (1).png" id="4_hxypl"]
-[ext_resource type="Texture2D" uid="uid://dekeevv53x7j0" path="res://warioware buttons.png" id="4_o0614"]
-[ext_resource type="Texture2D" uid="uid://b5qinm3x5sxyd" path="res://warioware buttons (2).png" id="5_o0614"]
+[ext_resource type="Script" uid="uid://d8mgnvledwrf" path="res://titlescreen.gd" id="1_v6ms7"]
+[ext_resource type="Texture2D" uid="uid://c5ujabs0y3wxf" path="res://assets/warioware background.png" id="2_v6ms7"]
+[ext_resource type="FontFile" uid="uid://dne10vnt5b88d" path="res://assets/Isometra-Regular.ttf" id="3_rpvs4"]
+[ext_resource type="Texture2D" uid="uid://dekeevv53x7j0" path="res://assets/warioware buttons.png" id="4_v6ms7"]
+[ext_resource type="Texture2D" uid="uid://dvjwudxro1qik" path="res://assets/warioware buttons (1).png" id="5_v6ms7"]
+[ext_resource type="Texture2D" uid="uid://b5qinm3x5sxyd" path="res://assets/warioware buttons (2).png" id="6_v6ms7"]
+[ext_resource type="PackedScene" uid="uid://bk615tqa8gvt7" path="res://scenes/transitionscreen.tscn" id="7_84han"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yu5tm"]
 content_margin_left = 5.0
@@ -67,7 +68,7 @@ shadow_offset = Vector2(0, 2)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8pdex"]
 
 [node name="titlescreen" type="Node2D" unique_id=1408427931]
-script = ExtResource("1_o0614")
+script = ExtResource("1_v6ms7")
 
 [node name="background" type="TextureRect" parent="." unique_id=1987223185]
 offset_left = 1.9999996
@@ -75,7 +76,7 @@ offset_top = 3.0
 offset_right = 1922.0
 offset_bottom = 1083.0
 scale = Vector2(0.59866625, 0.5975937)
-texture = ExtResource("2_o0614")
+texture = ExtResource("2_v6ms7")
 
 [node name="Label" type="Label" parent="." unique_id=898673551]
 offset_left = 6.0
@@ -85,7 +86,7 @@ offset_bottom = 89.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0.28118682, 0.28118688, 0.28118682, 0)
 theme_override_constants/outline_size = 15
-theme_override_fonts/font = ExtResource("2_2bjoa")
+theme_override_fonts/font = ExtResource("3_rpvs4")
 theme_override_font_sizes/font_size = 50
 text = "PearWareInc."
 
@@ -103,7 +104,7 @@ theme_override_constants/separation = 12
 [node name="start game" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=1479018428]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.54901963, 0.31764707, 0.2509804, 1)
-theme_override_fonts/font = ExtResource("2_2bjoa")
+theme_override_fonts/font = ExtResource("3_rpvs4")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_yu5tm")
 theme_override_styles/hover = SubResource("StyleBoxFlat_goadl")
@@ -120,7 +121,7 @@ offset_top = -22.0
 offset_right = 273.0
 offset_bottom = 33.0
 scale = Vector2(1.4084607, 1.5376838)
-texture = ExtResource("4_o0614")
+texture = ExtResource("4_v6ms7")
 expand_mode = 1
 stretch_mode = 5
 
@@ -130,7 +131,7 @@ layout_mode = 2
 [node name="settings" type="Button" parent="VBoxContainer/HBoxContainer3" unique_id=3085622]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.45882353, 0.2627451, 0.2, 1)
-theme_override_fonts/font = ExtResource("2_2bjoa")
+theme_override_fonts/font = ExtResource("3_rpvs4")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_yu5tm")
 theme_override_styles/hover = SubResource("StyleBoxFlat_goadl")
@@ -149,7 +150,7 @@ offset_top = -23.0
 offset_right = 205.0
 offset_bottom = 32.0
 scale = Vector2(1.689, 1.538)
-texture = ExtResource("4_hxypl")
+texture = ExtResource("5_v6ms7")
 expand_mode = 1
 stretch_mode = 5
 
@@ -159,7 +160,7 @@ layout_mode = 2
 [node name="quit" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1383295489]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.4117647, 0.22745098, 0.1764706, 1)
-theme_override_fonts/font = ExtResource("2_2bjoa")
+theme_override_fonts/font = ExtResource("3_rpvs4")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_yu5tm")
 theme_override_styles/hover = SubResource("StyleBoxFlat_goadl")
@@ -177,9 +178,11 @@ offset_top = -19.999985
 offset_right = 139.99995
 offset_bottom = 60.000015
 scale = Vector2(1.4189173, 1.1271691)
-texture = ExtResource("5_o0614")
+texture = ExtResource("6_v6ms7")
 expand_mode = 1
 stretch_mode = 5
+
+[node name="transitionscreen" parent="." unique_id=1456501474 instance=ExtResource("7_84han")]
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer2/start game" to="." method="_on_start_game_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer3/settings" to="." method="_on_settings_pressed"]
