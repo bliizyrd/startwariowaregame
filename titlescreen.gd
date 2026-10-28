@@ -1,10 +1,14 @@
 extends Node2D
 
+func _ready() -> void:
+	Globalscript.lives = 5
+	Globalscript.minigames_done = 0
 
 func _on_start_game_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/levelscene.tscn")
 	Transitionscreen.transition()
 	await Transitionscreen.on_transition_finish
+
 
 
 func _on_quit_pressed() -> void:

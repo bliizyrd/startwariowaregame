@@ -12,23 +12,22 @@ extends Node2D
 var time
 
 func _ready() -> void:
-	await Timer(3.0) # using the function created 
+	await Timer(3.0)
 
-	if Globalscript.minigames_done < 3: #if you havent completed 3 minigames yet 
-		Globalscript.minigames_done = Globalscript.minigames_done +1
-		get_tree().change_scene_to_file("res://scenes/minigame_" + str(Globalscript.minigames_done) + ".tscn") # changes your scene by arranging this frankenstein path
+	if Globalscript.lives <= 0:
+		get_tree().change_scene_to_file("res://scenes/loserscreen.tscn")
+		return
+
+	if Globalscript.minigames_done < 2:   # changed from 3 to 2
+		Globalscript.minigames_done = max(Globalscript.minigames_done + 1, 1)
+		get_tree().change_scene_to_file("res://scenes/minigame_" + str(Globalscript.minigames_done) + ".tscn")
 		Transitionscreen.transition()
 		await Transitionscreen.on_transition_finish
-	
-		
-# above, your script is being told to go to the next minigame. If the 
-# current minigame is level 1, then you would be on minigame 1. If you 
-# complete that level, you have the minigames_done add one, and then you 
-# look for the scene titled `minigame_` and then whatever minigame number 
-# should be next. make sure you name your minigame saves appropriately.
-
 	else:
-		get_tree().change_scene_to_file("res://scenes/titlescreen.tscn") # changes your scene
+		get_tree().change_scene_to_file("res://scenes/winscreen.tscn")
+		
+
+
 
 
 func _process(delta: float) -> void: # runs every frame

@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://degimgir1d1wi"]
+
+[ext_resource type="FontFile" uid="uid://dne10vnt5b88d" path="res://assets/Isometra-Regular.ttf" id="1_47rfs"]
+[ext_resource type="Script" uid="uid://d5rxg7upj4gv" path="res://scripts/winscreen.gd" id="1_wg0yv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0eh81"]
+bg_color = Color(0.6254276, 0.4853164, 0.37478253, 1)
+border_width_top = 5
+border_width_bottom = 5
+border_color = Color(0.4128905, 0.30876106, 0.22599524, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="winscreen" type="Node2D" unique_id=407517544]
+script = ExtResource("1_wg0yv")
+
+[node name="winnerbackground" type="ColorRect" parent="." unique_id=1298513253]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.54901963, 0.31764707, 0.2509804, 1)
+
+[node name="Label" type="Label" parent="winnerbackground" unique_id=1796081579]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.5
+offset_top = -79.75
+offset_right = 256.5
+offset_bottom = 79.75
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.103743516, 0.10374353, 0.103743516, 1)
+theme_override_colors/font_shadow_color = Color(0.4817894, 0.48178953, 0.4817894, 0.81960785)
+theme_override_colors/font_outline_color = Color(0.48145044, 0.3358697, 0.193066, 1)
+theme_override_constants/shadow_offset_x = 10
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("1_47rfs")
+theme_override_font_sizes/font_size = 108
+text = "YOU WIN!!!"
+
+[node name="main menu" type="Button" parent="." unique_id=1464664383]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 372.0
+offset_top = 128.5
+offset_right = 813.0
+offset_bottom = 204.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.7666196, 0.76661956, 0.76661956, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("1_47rfs")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_0eh81")
+text = "Main Menu"

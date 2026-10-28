@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://bpvtc47dyi5be"]
 
-[ext_resource type="Script" uid="uid://cmwr446rvlu01" path="res://scenes/minigame_1.gd" id="1_fa05o"]
+[ext_resource type="Script" uid="uid://cmwr446rvlu01" path="res://minigame_1.gd" id="1_fa05o"]
 [ext_resource type="Texture2D" uid="uid://c5ujabs0y3wxf" path="res://assets/warioware background.png" id="1_og05i"]
 [ext_resource type="PackedScene" uid="uid://cgy8ag0u1tdqf" path="res://scenes/player.tscn" id="2_lmjug"]
 [ext_resource type="Texture2D" uid="uid://bs40fb65lux8k" path="res://assets/keymade.png" id="3_lmjug"]
-[ext_resource type="Script" uid="uid://dvsgvcvae8h4l" path="res://scenes/key.gd" id="3_v5ebm"]
+[ext_resource type="Script" uid="uid://dvsgvcvae8h4l" path="res://key.gd" id="3_v5ebm"]
 [ext_resource type="PackedScene" uid="uid://bxtgyt5ryfc6s" path="res://scenes/themedtimer.tscn" id="6_vc5od"]
-[ext_resource type="Script" uid="uid://bgxfv6u4n5ymy" path="res://scenes/key_2.gd" id="6_xpvfh"]
-[ext_resource type="Script" uid="uid://cclpgbbr8thpb" path="res://scenes/key_3.gd" id="7_r58ir"]
+[ext_resource type="Script" uid="uid://bgxfv6u4n5ymy" path="res://key_2.gd" id="6_xpvfh"]
+[ext_resource type="Script" uid="uid://cclpgbbr8thpb" path="res://key_3.gd" id="7_r58ir"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yu5tm"]
 size = Vector2(1152, 31)
