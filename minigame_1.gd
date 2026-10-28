@@ -36,4 +36,3 @@ func _process(_delta: float) -> void:
 
 func Key_collect() -> void:
 	Key_collected += 1
-	print("keys: ", Key_collected)
