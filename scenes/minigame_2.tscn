@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bpylqcmbn30ub" path="res://minigame_2.gd" id="1_ksu6r"]
 [ext_resource type="Texture2D" uid="uid://c5ujabs0y3wxf" path="res://assets/warioware background.png" id="2_dqa6p"]
 [ext_resource type="PackedScene" uid="uid://bxtgyt5ryfc6s" path="res://scenes/themedtimer.tscn" id="3_c3ytc"]
-[ext_resource type="Script" uid="uid://c02mr27jyo5bq" path="res://button_1.gd" id="4_eachr"]
+[ext_resource type="Script" uid="uid://c02mr27jyo5bq" path="res://button_1.gd" id="4_ksu6r"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5x31c"]
 load_path = "res://.godot/imported/keymade.png-d691c36c6e824ba3e41bb31c71247d94.ctex"
@@ -31,7 +31,7 @@ offset_right = 1754.0
 offset_bottom = 1166.0
 scale = Vector2(0.18347561, 0.18347561)
 texture_normal = SubResource("CompressedTexture2D_5x31c")
-script = ExtResource("4_eachr")
+script = ExtResource("4_ksu6r")
 
 [node name="button_2" type="TextureButton" parent="." unique_id=1774580852]
 offset_left = 602.00006
@@ -40,7 +40,7 @@ offset_right = 2282.0
 offset_bottom = 1069.0
 scale = Vector2(0.18347561, 0.18347561)
 texture_normal = SubResource("CompressedTexture2D_5x31c")
-script = ExtResource("4_eachr")
+script = ExtResource("4_ksu6r")
 
 [node name="button_3" type="TextureButton" parent="." unique_id=1343625749]
 offset_left = 192.00002
@@ -49,7 +49,7 @@ offset_right = 1872.0
 offset_bottom = 1422.0
 scale = Vector2(0.18347561, 0.18347561)
 texture_normal = SubResource("CompressedTexture2D_5x31c")
-script = ExtResource("4_eachr")
+script = ExtResource("4_ksu6r")
 
 [node name="button_4" type="TextureButton" parent="." unique_id=199744696]
 offset_left = 714.00006
@@ -58,7 +58,7 @@ offset_right = 2394.0
 offset_bottom = 1447.0
 scale = Vector2(0.18347561, 0.18347561)
 texture_normal = SubResource("CompressedTexture2D_5x31c")
-script = ExtResource("4_eachr")
+script = ExtResource("4_ksu6r")
 
 [node name="button_5" type="TextureButton" parent="." unique_id=1631623534]
 offset_left = 319.99994
@@ -67,7 +67,7 @@ offset_right = 2000.0
 offset_bottom = 1020.9999
 scale = Vector2(0.18347561, 0.18347561)
 texture_normal = SubResource("CompressedTexture2D_5x31c")
-script = ExtResource("4_eachr")
+script = ExtResource("4_ksu6r")
 
 [node name="button_6" type="TextureButton" parent="." unique_id=1327425947]
 offset_left = 417.0
@@ -76,7 +76,7 @@ offset_right = 2097.0
 offset_bottom = 1247.0
 scale = Vector2(0.18347561, 0.18347561)
 texture_normal = SubResource("CompressedTexture2D_5x31c")
-script = ExtResource("4_eachr")
+script = ExtResource("4_ksu6r")
 
 [node name="button_7" type="TextureButton" parent="." unique_id=487653531]
 offset_left = -19.000092
@@ -85,7 +85,7 @@ offset_right = 1660.9999
 offset_bottom = 1506.0
 scale = Vector2(0.18347561, 0.18347561)
 texture_normal = SubResource("CompressedTexture2D_5x31c")
-script = ExtResource("4_eachr")
+script = ExtResource("4_ksu6r")
 
 [connection signal="pressed" from="button_1" to="button_1" method="_on_pressed"]
 [connection signal="pressed" from="button_2" to="button_2" method="_on_pressed"]
