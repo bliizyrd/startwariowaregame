@@ -6,7 +6,7 @@ A warioware typa game where you are supposed to complete minigames within a give
 
 
 
-\[game screenshot] "E:\\OneDrive\\Desktop\\wariowareendscreen - Copy.png"
+\[game screenshot] (screenshots/wariowareendscreen.png)
 
 
 
@@ -58,5 +58,5 @@ engine - godot 4.7
 
 AI USAGE
 
-I USED AI TO HELP ME WITH DEBUGGING SOME SCRIPT ERRORS THAT THE GUIDE DIDN'T SPECIFY BUT I WROTE THE GAME DESIGN, MINIGAME LOGIC AND ART BY MYSELF.
+I USED AI TO HELP ME WITH DEBUGGING AND REWRITING SOME OF THE ERRORS THAT THE GUIDE DID NOT SPECIFY BUT I WORTE THE GAME DESIGN AND ART MYSELF AND OVERALL MOST SCRIPTS WERE ALSO MADE BY ME
 
