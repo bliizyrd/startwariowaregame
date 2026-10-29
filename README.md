@@ -6,7 +6,7 @@ A warioware typa game where you are supposed to complete minigames within a give
 
 
 
-![game screenshot] (screenshots/wariowareendscreen.png)
+![Gameplay screenshot](screenshots/wariowareendscreen.png)
 
 
 
