@@ -5,7 +5,8 @@
 A warioware typa game where you are supposed to complete minigames within a given time frame to avoid losing a life and ultimately going back to the titlescreen...
 
 
-<img width="1920" height="1080" alt="wariowareendscreen - Copy" src="https://github.com/user-attachments/assets/ada65566-d5fa-4dee-952d-b00df3ec31c2" />
+<img width="1667" height="858" alt="image" src="https://github.com/user-attachments/assets/4286624f-e827-414e-a010-bfbb25d9cc1d" />
+
 
 
 ## PLAY IT!!!:
