@@ -11,7 +11,7 @@ A warioware typa game where you are supposed to complete minigames within a give
 
 ## PLAY IT!!!:
 
-\*\*\[play the game in browser itch.io](https://bliizyrd.itch.io/pearwareinc)\*\*
+[play the game in browser itch.io](https://bliizyrd.itch.io/pearwareinc)
 
 ## HOW TO PLAY:
 
