@@ -143,6 +143,8 @@ metadata/_edit_use_anchors_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platform2" unique_id=867550456]
 shape = SubResource("RectangleShape2D_0eh81")
+one_way_collision = true
+one_way_collision_margin = 8.0
 
 [node name="platform3" type="StaticBody2D" parent="." unique_id=1430074557]
 position = Vector2(0, -16)
@@ -157,6 +159,8 @@ color = Color(0.45882353, 0.2627451, 0.2, 1)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platform3" unique_id=1959806526]
 position = Vector2(334.5, 464.5)
 shape = SubResource("RectangleShape2D_uq4ul")
+one_way_collision = true
+one_way_collision_margin = 8.0
 
 [node name="platform4" type="StaticBody2D" parent="." unique_id=1322850583]
 position = Vector2(1017, 185)
@@ -200,6 +204,8 @@ metadata/_edit_use_anchors_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="moving platform" unique_id=913232837]
 position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_diwod")
+one_way_collision = true
+one_way_collision_margin = 4.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="moving platform" unique_id=20436599]
 libraries/ = SubResource("AnimationLibrary_v5ebm")
